@@ -1,1 +1,1 @@
-Bu repo sadece kişisel konfigürasyonlarımı içermektedir.
+Sadece kişisel konfigürasyonlarımı içermektedir.
