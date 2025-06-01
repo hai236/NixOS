@@ -22,21 +22,21 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot";
 
-  #Btrfs filesystems
+  # Btrfs filesystems
   fileSystems = {
   "/".options = [ "compress=zstd" ];
   "/home".options = [ "compress=zstd" ];
   "/nix".options = [ "compress=zstd" "noatime" ];
   "/swap".options = [ "noatime" ];
 };
-  #Scrubbing for btrfs
+  # Scrubbing for btrfs
   services.btrfs.autoScrub = {
   enable = true;
   interval = "weekly";
   fileSystems = [ "/" ];
 };
 
-  #Network Config
+  # Network Config
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -190,6 +190,7 @@
     zsh
     oh-my-zsh
     zsh-syntax-highlighting
+    zsh-autosuggestions
     pciutils
     librecad
     blueman
